@@ -13,6 +13,10 @@ const urlPages = [
         label: 'Contatti',
         href: '/contacts'
     },
+    {
+        label: 'Login',
+        href: '/login'
+    }
 ]
 
 export default function(){

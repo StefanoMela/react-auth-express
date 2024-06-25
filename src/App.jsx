@@ -5,6 +5,7 @@ import NotFound from "./pages/NotFound";
 import Home from "./pages/Home";
 import PostList from "./pages/PostList";
 import Post from "./pages/Post";
+import LogIn from "./pages/LogIn";
 
 import { AuthProvider } from "./contexts/AuthContext";
 
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/" element={<DefaultLayout />}>
             <Route path="*" element={<NotFound />} />
             <Route index element={<Home />} />
+            <Route path="login" element={<LogIn/>} />
           </Route>
           <Route path="/posts" element={<PostList />} />
           <Route path="/posts/:postId" element={<Post />} />
